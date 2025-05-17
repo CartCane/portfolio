@@ -31,6 +31,12 @@ li{
     align-self: flex-end;
 }
 
+.menu-icon{
+    display: none;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
 .intro{
     color: white;
     font-size: 2.4rem;
@@ -53,7 +59,7 @@ li{
     grid-template-rows: 40rem;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin: 5rem 0;
 }
 
 .project-card{
@@ -81,7 +87,7 @@ li{
     gap: 5rem;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin: 5rem 0;
 }
 
 .skill-card{
@@ -113,6 +119,7 @@ li{
     gap: 1rem;
 }
 
+
 .contact > form{
     display: flex;
     flex-direction: column;
@@ -127,4 +134,63 @@ li{
 
 .contact > form > input{
     height: 4rem;
+}
+
+@media (max-width: 768px) {
+    .menu-icon{
+        display: block;
+        color: white;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .nav.open{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-top: 1rem;
+    }
+
+    .project {
+        font-size: 1.8rem;
+        height: auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 1rem;
+    }
+
+    .project-card {
+        max-width: 100%;
+    }
+
+    .skills {
+        height: auto;
+        font-size: 1.8rem;
+    }
+
+    .skill {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .footer {
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .info {
+        font-size: 1.6rem;
+    }
 }

@@ -1,3 +1,5 @@
+import {useState} from 'react';
+
 export default function Header(){
     return(
         <header className="header">
@@ -8,8 +10,13 @@ export default function Header(){
 }
 
 function Navbar(){
+    const [isOpen, setIsOpen] = useState(false);
     return(
-        <ul className="nav">
+        <>
+        <div className="menu-icon" onClick={()=>setIsOpen(prev => !prev)}>
+        ☰
+        </div>
+        <ul className= {`nav ${isOpen ? "open": ""}`}>
             <li>About</li>
             <li>Projects</li>
             <li>Skills</li>
@@ -17,6 +24,7 @@ function Navbar(){
             <li>Resume</li>
             <li>Blogs</li>
         </ul>
+        </>
     )
 }
 
