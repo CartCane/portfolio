@@ -5,6 +5,7 @@ export default function Header(){
         <header className="header">
             <Navbar />
             <Introduction />
+            <img src="src/assets/dp.jpg" alt='image'/>
         </header>
     )
 }

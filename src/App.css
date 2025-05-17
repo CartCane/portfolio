@@ -21,8 +21,13 @@ li{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    gap: 2rem;
 }
 
+.header > img {
+    border-radius: 50%;
+    margin-top: 5rem;
+}
 .nav{
     display: flex;
     font-size: 2.4rem;
