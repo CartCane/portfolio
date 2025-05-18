@@ -1,11 +1,12 @@
 import {useState} from 'react';
+import dp from '../assets/dp.jpg';
 
 export default function Header(){
     return(
         <header className="header">
             <Navbar />
             <Introduction />
-            <img src="src/assets/dp.jpg" alt='image'/>
+            <img src={dp} alt='image'/>
         </header>
     )
 }
