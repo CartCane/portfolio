@@ -1,3 +1,4 @@
+import Button from "./button"
 export default function Footer({data}){
     return(
         <div className="footer">
@@ -32,9 +33,9 @@ function Contacts(){
                 <input></input>
                 <label>Message</label>
                 <textarea rows="5"></textarea>
-                <button>Send</button>
+                <Button color="#7F55B1">Send</Button>
             </form>  
-            <button>Whatsapp Me</button>
+            <Button color="#3EC70B">Whatsapp Me</Button>
         </div>
     )
 }

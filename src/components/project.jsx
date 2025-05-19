@@ -10,11 +10,11 @@ export default function Project({data}){
 function ProjectItems({data}){
     return(
         <div className="cards">
-            {data.map( project => (<div className="project-card">
+            {data.map( project => (<div key={project.title} className="project-card">
                 <img src={project.image} alt="image"/>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <ul>{project.tech_stack.map( stack => (<li>{stack}</li>))}</ul>
+                <ul>{project.tech_stack.map( (stack, index) => (<li key={index}>{stack}</li>))}</ul>
                 <a href={project.link}>View Project</a>
             </div>))}
         </div>
