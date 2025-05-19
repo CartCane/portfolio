@@ -1,7 +1,7 @@
 const data = {
  projects: [
     {
-        image: "/to-do.png",
+        image: "./to-do.png",
         title: "To-Do List",
         description: "A simple and efficient To-Do List application built using React and JavaScript. This project allows users to manage their daily tasks with features like adding, editing, deleting, and marking tasks as complete.",
         features: ["✅ Add new task", "✏️ Edit existing tasks", "🗑️ Delete tasks", "📌 Mark tasks as completed", "⚡ Responsive and interactive UI"],
@@ -9,7 +9,7 @@ const data = {
         link: "https://CartCane.github.io/my-todo-app"
     },
     {
-        image: "/eatNsplit.png",
+        image: "./eatNsplit.png",
         title: "EatNSplit App",
         description: "EatNSplit is a user-friendly bill-splitting application built with React and JavaScript. It helps users easily track and split expenses among friends. Perfect for group outings, shared meals, and travel budgeting.",
         features: ["👥 Add friends with names and custom avatars", "➕ Add and split expenses between you and friends", "💰 See who owes whom and how much", "🔄 Dynamic status updates"],

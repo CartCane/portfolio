@@ -208,12 +208,15 @@ li{
     .project {
         font-size: 1.8rem;
         height: auto;
-        margin-top: 2rem;
+    }
+
+    .project h1{
+        margin-top: 10rem;
     }
 
     .cards {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 45rem 45rem;
         padding: 1rem;
     }
 
