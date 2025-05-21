@@ -19,8 +19,8 @@ function Navbar({data}){
         ☰
         </div>
         <ul className= {`nav ${isOpen ? "open": ""}`}>
-            {data.map(i=> <li><a href={`#${i}`}>{i}</a></li>)}
-            <li><a href="./front-end.pdf" download>Resume</a></li>
+            {data.map((i, index)=> <li key={i}><a href={`#${i}`} onClick={()=>setIsOpen(false)}>{i}</a></li>)}
+            <li key="resume"><a href="./front-end.pdf" download>Resume</a></li>
         </ul>
         </>
     )
