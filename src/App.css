@@ -17,6 +17,14 @@ li{
     list-style: none;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color:#7F55B1;
+}
+
 .btn{
     padding: .8rem 1.5rem;
     border-radius: 2rem;

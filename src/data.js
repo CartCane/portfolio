@@ -1,4 +1,5 @@
 const data = {
+nav : ["About", "Project", "Skills", "Contacts", "Blog"],
  projects: [
     {
         image: "./to-do.png",

@@ -1,6 +1,6 @@
 export default function Skills({item}){
     return(
-        <div className="skills">
+        <div className="skills" id="Skills">
             <h1>Skills</h1>
             <div className="skill">
             {item.map( i => <SkillList key={i.skillDomain} skill={i} />)}

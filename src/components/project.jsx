@@ -1,6 +1,6 @@
 export default function Project({data}){
     return(
-        <div className="project">
+        <div className="project" id="Project">
             <h1>Projects</h1>
             <ProjectItems data={data}/>
         </div>

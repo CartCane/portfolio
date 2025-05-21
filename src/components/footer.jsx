@@ -1,7 +1,7 @@
 import Button from "./button"
 export default function Footer({data}){
     return(
-        <div className="footer">
+        <div className="footer" id="Contacts">
             <MyInfo data={data}/>
             <Contacts />
         </div>
