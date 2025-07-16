@@ -16,6 +16,14 @@ nav : ["About", "Project", "Skills", "Contacts", "Blog"],
         features: ["👥 Add friends with names and custom avatars", "➕ Add and split expenses between you and friends", "💰 See who owes whom and how much", "🔄 Dynamic status updates"],
         tech_stack: ["React", "Javascript", "CSS"],
         link: "https://cartcane.github.io/eatNsplit/"
+    },
+    {
+        image: "./movieWiz.png",
+        title: "Movie App",
+        description: "A simple and user-friendly movie app that lets users search for any movie using the OMDb API and save watched movies in a personal list. It helps users track what they’ve seen and explore movie details easily.",
+        features: ["🔍 Movie Search", "✅ Watched Movie List", "🗑️ Remove from Watched List", "🧾 Movie Details View"],
+        tech_stack: ["React.js", "vite", "fetch API"],
+        link: "https://cartcane.github.io/MovieWizard/"
     }
  ],
  skills: [
