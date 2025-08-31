@@ -2,6 +2,14 @@ const data = {
 nav : ["About", "Project", "Skills", "Contacts", "Blog"],
  projects: [
     {
+        image: "./quiz.png",
+        title: "Quiz-App",
+        description: "A responsive React-based quiz application that fetches questions from the Open Trivia Database API. Users can test their general knowledge, answer multiple-choice questions, and get instant feedback. At the end of the quiz, the app displays the total score, percentage, and high score, with an option to restart and play again.",
+        features: ["Dynamic questions fetched via API", "Multiple-choice answers with instant correctness check", "Score tracking and percentage calculation", "Restart quiz option"],
+        tech_stack: ["React", "useReducer", "state-management", "CSS", "Javascript"],
+        link: "https://CartCane.github.io/quiz-app"
+    },
+    {
         image: "./to-do.png",
         title: "To-Do List",
         description: "A simple and efficient To-Do List application built using React and JavaScript. This project allows users to manage their daily tasks with features like adding, editing, deleting, and marking tasks as complete.",
