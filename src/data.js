@@ -1,5 +1,5 @@
 const data = {
-nav : ["About", "Project", "Skills", "Contacts", "Blog"],
+nav : ["Home", "Project", "blog", "Contacts"],
  projects: [
     {
         image: "./quiz.png",

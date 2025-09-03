@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    background-color: #332D56;
+    background-color: #343a40;
     font-family: Syne, sans-serif;
     font-size: 1rem;
     padding: 2rem;
@@ -17,12 +17,13 @@ li{
     list-style: none;
 }
 
+.active{
+    background-color: orange;
+}
+
 a{
     color: white;
     text-decoration: none;
-}
-a:hover{
-    color:#7F55B1;
 }
 
 .btn{
@@ -30,26 +31,27 @@ a:hover{
     border-radius: 2rem;
     outline: none;
     border: none;
-    color: white;
+    cursor: pointer;
 }
 
+.logo{
+    color: orange;
+    font-size: 2.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
 .header{
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    justify-content: space-between;
     gap: 2rem;
 }
 
-.header > img {
-    border-radius: 50%;
-    margin-top: 5rem;
-}
 .nav{
     display: flex;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    margin: 0 auto;
     color: white;
     gap: 2rem;
-    align-self: flex-end;
 }
 
 .menu-icon{
@@ -58,10 +60,44 @@ a:hover{
     cursor: pointer;
 }
 
-.intro{
+.intro-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 1.2rem;
     color: white;
     font-size: 2.4rem;
+    height: 75vh;
     margin-top: 7rem;
+}
+
+.intro{
+    width: 66rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+.intro-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+p{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.name{
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.intro-container > img{
+    height: auto;
+    border-radius: 50%;
+    border: .2rem solid orange
 }
 .intro > p{
     margin-top: 2rem;
@@ -71,28 +107,29 @@ a:hover{
     color: white;
     margin-top: 5rem;
     font-size: 2rem;
-    height: 100vh;
 }
 
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 45rem;
     justify-content: center;
+    align-items: center;
     gap: 1.5rem;
     margin: 5rem 0;
 }
 
 .project-card{
     background-color: white;
-    max-width: 40rem;
+    max-width: 30rem;
     height: auto;
     color: black;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: space-around;
-    padding: 1rem;
+    border: .2rem solid white;
+    /* padding: 1rem; */
     
 }
 
@@ -103,14 +140,14 @@ a:hover{
 }
 
 .project-card p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .project-card ul{
     display: flex;
     align-items: center;
     gap: .5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .project-card ul li{
@@ -202,11 +239,13 @@ a:hover{
     height: 4rem;
 }
 
-.whatsapp{
+.btn-whatsapp{
+    font-size: 1.8rem;
     background-color: #25d366;
     padding: 1rem 1.5rem;
     border-radius: 5rem;
     align-self: self-start;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {

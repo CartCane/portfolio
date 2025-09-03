@@ -1,17 +1,15 @@
 import {useState} from 'react';
-import dp from '../assets/dp.jpg';
 
-export default function Header({data}){
+export default function Header({data, state, setState}){
     return(
         <header className="header">
-            <Navbar data={data}/>
-            <Introduction />
-            <img src={dp} alt='image'/>
+            <h1 className="logo" onClick={()=>setState("home")}>{state === "home" ? ".CartCane" : "👈Back"}</h1>
+            <Navbar data={data} setState={setState} state={state}/>
         </header>
     )
 }
 
-function Navbar({data}){
+function Navbar({data, setState, state}){
     const [isOpen, setIsOpen] = useState(false);
     return(
         <>
@@ -19,18 +17,10 @@ function Navbar({data}){
         ☰
         </div>
         <ul className= {`nav ${isOpen ? "open": ""}`}>
-            {data.map((i, index)=> <li key={index}><a href={`#${i}`} onClick={()=>setIsOpen(false)}>{i}</a></li>)}
-            <li key="resume"><a href="./front-end.pdf" download>Resume</a></li>
+            {data.map((i, index)=> <li className={`btn ${state === i.toLowerCase() ? "active" : ""}`} key={index}><a href={`#${i}`} onClick={()=>setState(i.toLowerCase())}>{i}</a></li>)}
+            <li className="btn" key="resume"><a href="./front-end.pdf" download>Resume</a></li>
         </ul>
         </>
     )
 }
 
-function Introduction(){
-    return(
-        <div className="intro" id="About">
-            <h1>Hi, I am Karthikeyan</h1>
-            <p>I'm a passionate web developer with a deep love for building beautiful and functional websites. My journey is fueled by a desire to learn and grow, consistently pushing boundaries and embracing new technologies.</p>
-        </div>
-    )
-}

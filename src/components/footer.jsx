@@ -1,4 +1,4 @@
-import Button from "./button"
+import Button from "./Button"
 export default function Footer({data}){
     return(
         <div className="footer" id="Contacts">
@@ -35,7 +35,7 @@ function Contacts(){
                 <textarea rows="5"></textarea>
                 <Button color="#7F55B1">Send</Button>
             </form>  
-            <a class="whatsapp" href="https://wa.me/917507571653?text=Hi%20Karthikeyan,%20I%20visited%20your%20website!" target="_blank">WhatsApp</a>
+            <a class="btn-whatsapp" href="https://wa.me/917507571653?text=Hi%20Karthikeyan,%20I%20visited%20your%20website!" target="_blank">WhatsApp</a>
         </div>
     )
 }
