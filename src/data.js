@@ -6,7 +6,7 @@ nav : ["Home", "Project", "blog", "Contacts"],
         title: "Quiz-App",
         description: "A responsive React-based quiz application that fetches questions from the Open Trivia Database API. Users can test their general knowledge, answer multiple-choice questions, and get instant feedback. At the end of the quiz, the app displays the total score, percentage, and high score, with an option to restart and play again.",
         features: ["Dynamic questions fetched via API", "Multiple-choice answers with instant correctness check", "Score tracking and percentage calculation", "Restart quiz option"],
-        tech_stack: ["React", "useReducer", "state-management", "CSS", "Javascript"],
+        tech_stack: ["React", "useReducer", "CSS", "Javascript"],
         link: "https://CartCane.github.io/quiz-app"
     },
     {

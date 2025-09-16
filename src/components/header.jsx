@@ -17,7 +17,7 @@ function Navbar({data, setState, state}){
         ☰
         </div>
         <ul className= {`nav ${isOpen ? "open": ""}`}>
-            {data.map((i, index)=> <li className={`btn ${state === i.toLowerCase() ? "active" : ""}`} key={index}><a href={`#${i}`} onClick={()=>setState(i.toLowerCase())}>{i}</a></li>)}
+            {data.map((i, index)=> <li className={`btn ${state === i.toLowerCase() ? "active" : ""}`} key={index}><a onClick={()=>setState(i.toLowerCase())}>{i}</a></li>)}
             <li className="btn" key="resume"><a href="./front-end.pdf" download>Resume</a></li>
         </ul>
         </>

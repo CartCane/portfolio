@@ -1,9 +1,9 @@
 export default function Skills({item}){
     return(
         <div className="skills" id="Skills">
-            <h1>Skills</h1>
+            <h3>Skills</h3>
             <div className="skill">
-            {item.map( i => <SkillList key={i.skillDomain} skill={i} />)}
+                {item.map( i => <SkillList key={i.skillDomain} skill={i} />)}
             </div>
         </div>
     )
@@ -13,7 +13,7 @@ function SkillList({skill}){
     return(
         <div className="skill-card">
             <h3>{skill.skillDomain}</h3>
-            <ul>
+            <ul className="skill-name">
                 {skill.tech.map( (i, index) => <li key={index}>{i}</li>)}
             </ul>
         </div>

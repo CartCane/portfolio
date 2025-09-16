@@ -13,8 +13,8 @@ export default function App(){
     <div>
       <Header data={data.nav} state={state} setState={setState}/>
       {state === "home" && <Introduction setState={setState}/>}
-      {state === "project" && <Project data={data.projects}/>}
-      {state === "blog" && <Skills item={data.skills}/>}
+      {state === "project" &&<Project dataSkills={data.skills} dataProject={data.projects}/>}
+      {state === "blog" && <></>}
       {state === "contacts" && <Footer data={data.footer}/>}
     </div>
   )
