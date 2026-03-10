@@ -1,0 +1,86 @@
+.introduction{
+    display: flex;
+    justify-content: space-around;
+    gap: 1.2rem;
+    color: white;
+    font-size: 2.4rem;
+    height: 70vh;
+    margin: 7rem;
+}
+
+.intro{
+    width: 66rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+p{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.name{
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.introduction > img{
+    height: auto;
+    border-radius: 50%;
+    border: .2rem solid orange
+}
+.intro > p{
+    margin-top: 2rem;
+}
+
+@media (max-width: 480px){
+    .introduction{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 1.2rem; */
+        color: white;
+        font-size: 1.4rem;
+        
+        height: auto;
+        margin: 2rem;
+    }
+
+    .introduction > img{
+        height: 20rem;
+        border-radius: 50%;
+        border: .2rem solid orange
+    }
+
+    .intro{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: .5rem;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+
+    .context p{
+        font-size: 1.4rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}

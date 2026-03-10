@@ -62,49 +62,6 @@ a{
     cursor: pointer;
 }
 
-.intro-container{
-    display: flex;
-    justify-content: space-around;
-    gap: 1.2rem;
-    color: white;
-    font-size: 2.4rem;
-    height: 75vh;
-    margin-top: 7rem;
-}
-
-.intro{
-    width: 66rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 2rem;
-}
-
-.intro-contact{
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-p{
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-.name{
-    color: orange;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.intro-container > img{
-    height: auto;
-    border-radius: 50%;
-    border: .2rem solid orange
-}
-.intro > p{
-    margin-top: 2rem;
-}
-
 .project-container{
     display: grid;
     grid-template-columns: 26rem auto;
@@ -118,7 +75,7 @@ p{
 
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 45rem;
     justify-content: center;
     align-items: center;
@@ -187,17 +144,6 @@ p{
     border-right: .2rem solid #fff;
 }
 
-.skill{
-    width: 20%;
-    /* display: grid; */
-    /* grid-template-columns: 35rem 35rem 35rem; */
-    /* grid-template-rows: 40rem; */
-    /* margin-bottom: 2rem; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin: 5rem 0;
-}
-
 .skill-card{
     /* height: 100%; */
     /* background-color: #A8F1FF; */
@@ -221,8 +167,7 @@ p{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 2.4rem;
-    background-color: aliceblue;
+    color: white;
     align-items: center;
     padding: 2rem;
 }
@@ -231,7 +176,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     gap: 1rem;
 }
 
@@ -255,6 +200,9 @@ p{
 
 .contact > form > input{
     height: 4rem;
+}
+.contact{
+    font-size: 1.6rem;
 }
 
 .btn-whatsapp{
@@ -331,5 +279,30 @@ p{
 
     .info {
         font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px){
+    body{
+        padding: 0;
+        width: 100%;
+    }
+    .header{
+        display: flex;justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        padding-bottom: .2rem;
+        border-bottom: .2rem solid #fff;
+    }
+
+    .logo{
+        color: orange;
+        font-size: 1.8rem;
+        /* margin: 1rem; */
+    }
+    .menu-icon{
+        font-size: 2rem;
+        cursor: pointer;
     }
 }

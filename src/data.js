@@ -2,6 +2,14 @@ const data = {
 nav : ["Home", "Project", "blog", "Contacts"],
  projects: [
     {
+        image: "./number-guess.png",
+        title: "Number Guessing Game",
+        description: "A fun and interactive game where the computer picks a random number, and the player tries to guess it. After each attempt, the player receives hints whether their guess is too high or too low, until they find the correct number. The game also tracks the total number of attempts made.",
+        features: ["Random Number Generation", "Real-time Feedback", "Attempt Tracking", "Responsive Design"],
+        tech_stack: ["React", "State-management", "module-CSS", "Javascript"],
+        link: "https://cartcane.github.io/guessing-game/"
+    },
+    {
         image: "./quiz.png",
         title: "Quiz-App",
         description: "A responsive React-based quiz application that fetches questions from the Open Trivia Database API. Users can test their general knowledge, answer multiple-choice questions, and get instant feedback. At the end of the quiz, the app displays the total score, percentage, and high score, with an option to restart and play again.",

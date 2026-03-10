@@ -33,7 +33,7 @@ function Contacts(){
                 <input></input>
                 <label>Message</label>
                 <textarea rows="5"></textarea>
-                <Button color="#7F55B1">Send</Button>
+                <Button bgColor= "#007BFF" color="white">Send</Button>
             </form>  
             <a class="btn-whatsapp" href="https://wa.me/917507571653?text=Hi%20Karthikeyan,%20I%20visited%20your%20website!" target="_blank">WhatsApp</a>
         </div>
